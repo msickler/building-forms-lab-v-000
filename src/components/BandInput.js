@@ -1,12 +1,16 @@
 import React, { Component } from 'react';
 
 class BandInput extends Component {
+  constructor() {
+    super()
+    this.state = { bands: ''}
+  }
 
   handleSubmit(event) {
     event.preventDefault()
     this.props.store.dispatch({ type: 'ADD_BAND', bands: this.state })
   }
-  
+
   render() {
     return (
       <div>
