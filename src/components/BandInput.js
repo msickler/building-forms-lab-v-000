@@ -9,9 +9,7 @@ class BandInput extends Component {
     };
   }
 
-  handleChange(event) {
-    this.setState({text: event.target.value})
-  }
+
 
   handleSubmit(event) {
     event.preventDefault();
